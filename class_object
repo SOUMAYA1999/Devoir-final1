@@ -1,0 +1,22 @@
+class Vehicle(object):
+    color="white"
+    
+    def __init__(self,Speed_MAX,mileage):
+        self.Speed_MAX=Speed_MAX
+        self.mileage=mileage
+    def add_seating_capacity(self,seating_capacity):
+        self.seating_capacity=seating_capacity
+    def properties_object(self):
+        print("Speed_MAX:",self.Speed_MAX)
+        print("mileage:",self.mileage)
+        print("color:",self.color)
+        print("seating_capacity:",self.seating_capacity)
+
+
+Vehicle_class1=Vehicle(200,20)
+Vehicle_class1.add_seating_capacity(5)
+Vehicle_class1.properties_object()
+
+Vehicle_class2=Vehicle(180,25)
+Vehicle_class2.add_seating_capacity(4)
+Vehicle_class2.properties_object()
